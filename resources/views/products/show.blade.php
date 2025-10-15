@@ -6,7 +6,7 @@
         <div class="card-body">
             <p><strong>ID:</strong> {{ $product->id }}</p>
             <p><strong>Nombre:</strong> {{ $product->name }}</p>
-            <p><strong>Precio:</strong> ${{ number_format($product->price, 0, '.', ',') }}</p>
+            <p><strong>Precio:</strong> ${{ number_format($product->price, decimals: 0, decimal_separator: '.', thousands_separator: '.') }}</p>
             <p><strong>Descripción:</strong> {{ $product->description }}</p>
         </div>
     </div>
