@@ -32,7 +32,12 @@
                     <li class="nav-item d-flex align-items-center me-3">
                         <span class="text-white">{{ Auth::user()->name }}</span>
                     </li>
-
+                    <li class="nav-item">
+                        <a class="nav-link {{ request()->routeIs('profile.*') ? 'active' : '' }}" 
+                        href="{{ route('profile.edit') }}">
+                        Perfil
+                        </a>
+                    </li>
                     <li class="nav-item ms-2">
                         <form action="{{ route('logout') }}" method="POST" class="d-inline">
                             @csrf
