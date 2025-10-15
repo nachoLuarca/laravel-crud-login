@@ -1,4 +1,4 @@
-@extends('products.layout')
+@extends('layout')
 
 @section('content')
     <h2>Editar producto</h2>
