@@ -3,11 +3,11 @@
 @section('content')
     <div class="d-flex justify-content-between align-items-center mb-3">
         <h2>Lista de usuarios</h2>
-        <a href="{{ route('users.create') }}" class="btn btn-primary">Nuevo usuario</a>
+        <a href="{{ route('users.create') }}" class="btn btn-success">Nuevo usuario</a>
     </div>
 
     <table class="table table-bordered">
-        <thead>
+        <thead class="table-light">
             <tr>
                 <th>ID</th>
                 <th>Nombre</th>
@@ -22,7 +22,7 @@
                     <td>{{ $user->name }}</td>
                     <td>{{ $user->email }}</td>
                     <td>
-                        <a href="{{ route('users.edit', $user) }}" class="btn btn-warning btn-sm">Editar</a>
+                        <a href="{{ route('users.edit', $user) }}" class="btn btn-primary btn-sm">Editar</a>
                         <form action="{{ route('users.destroy', $user) }}" method="POST" style="display:inline;">
                             @csrf
                             @method('DELETE')
