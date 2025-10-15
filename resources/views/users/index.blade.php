@@ -7,7 +7,7 @@
     </div>
 
     <table class="table table-bordered">
-        <thead>
+        <thead class="table-light">
             <tr>
                 <th>ID</th>
                 <th>Nombre</th>

@@ -15,7 +15,9 @@ Route::get('/', function () {
 // 👇 Rutas protegidas: solo usuarios logueados pueden acceder
 Route::middleware('auth')->group(function () {
     // CRUD de Uusarios
-    Route::resource('users', UserController::class);
+      Route::middleware('is_admin')->group(function () {
+        Route::resource('users', UserController::class);
+    });
     // CRUD de productos
     Route::resource('products', ProductController::class);
     // Perfil del usuario (opcional)
