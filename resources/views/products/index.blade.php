@@ -20,7 +20,7 @@
             <tr>
                 <td>{{ $product->id }}</td>
                 <td>{{ $product->name }}</td>
-                <td>${{ number_format($product->price, 0, '.', ',') }}</td>
+                <td>${{ number_format($product->price, 0, '.', '.') }}</td>
                 <td>
                     <a class="btn btn-info btn-sm" href="{{ route('products.show', $product->id) }}">Ver</a>
                     <a class="btn btn-primary btn-sm" href="{{ route('products.edit', $product->id) }}">Editar</a>
