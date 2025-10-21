@@ -1,4 +1,4 @@
-@extends('layout')
+@extends('layouts.layout')
 
 @section('content')
     <h2>Crear producto</h2>

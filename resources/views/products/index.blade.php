@@ -1,4 +1,4 @@
-@extends('layout')
+@extends('layouts.layout')
 
 @section('content')
     <div class="d-flex justify-content-between mb-3">
