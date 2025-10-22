@@ -16,6 +16,10 @@
         <label>Contraseña</label>
         <input type="password" name="password" class="form-control" required>
     </div>
+    <div class="mb-3 form-check">
+        <input type="checkbox" name="is_admin" class="form-check-input" id="is_admin">
+        <label class="form-check-label" for="is_admin">Agregar Permisos de Administrador</label>
+    </div>
     <button type="submit" class="btn btn-success">Guardar</button>
 </form>
 @endsection
